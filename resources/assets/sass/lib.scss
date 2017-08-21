@@ -1,0 +1,49 @@
+@charset "UTF-8";
+@import "variables";
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-row-center {
+  @include flex-center;
+  flex-direction: row;
+}
+
+@mixin flex-col-center {
+  @include flex-center;
+  flex-direction: column;
+}
+
+@mixin flex-col-top {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+@mixin flex-row-between {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin content-container {
+  width: 100%;
+  padding: 0 calc(100% - 1200px)/2;
+}
+
+.flex-row-center {
+  @include flex-row-center;
+}
+
+.flex-col-center {
+  @include flex-col-center;
+}
+
+.flex-row-between {
+  @include flex-row-between;
+}
