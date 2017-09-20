@@ -11,12 +11,8 @@
 |
 */
 
-Route:: get('task', function(){
-	return view('task')->with('hideBg', true);
-})->middleware('auth')->name('task');
-
 Route::get('/', function(){
-    return redirect()->route('task');
-});
+    return view('task')->with('hideBg', true);
+})->middleware('auth')->name('task');
 
 Auth::routes();

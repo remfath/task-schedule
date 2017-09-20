@@ -26,6 +26,7 @@
     .app-content {
         @include flex-col-top;
         width: 100%;
+        //margin-top: 100px;
         //min-height: calc(100vh - 65px);
     }
 

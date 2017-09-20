@@ -1,18 +1,3 @@
-<style type="text/scss" lang="scss" scoped>
-    .add-btn {
-        margin: 30px 0 10px;
-    }
-
-    .new-task-form-table {
-        .el-form-item {
-            width: 40%;
-            .el-form-item__content {
-                width: 80%;
-            }
-        }
-    }
-</style>
-
 <template>
     <container>
         <el-button type="success" class="add-btn" @click="showFormDialog=true">
@@ -141,3 +126,18 @@
         }
     }
 </script>
+
+<style type="text/scss" lang="scss" scoped>
+    .add-btn {
+        margin: 30px 0 10px;
+    }
+
+    .new-task-form-table {
+        .el-form-item {
+            width: 40%;
+            .el-form-item__content {
+                width: 80%;
+            }
+        }
+    }
+</style>

@@ -1,9 +1,13 @@
 @extends('layouts.app')
 
+@section('styles')
+    <link href="{{ asset('css/task.css') }}" rel="stylesheet">
+@endsection
+
 @section('content')
-    <div id="task"></div>
+    <div id="app"></div>
 @endsection
 
 @section('scripts')
-    <script src="{{ mix('/js/task.js') }}"></script>
+    <script src="{{ asset('js/task.js') }}"></script>
 @endsection

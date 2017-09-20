@@ -1,56 +1,3 @@
-<style type="text/scss" lang="scss" scoped>
-    .list-table {
-        font-size: 13px;
-        width: 100%;
-    }
-
-    .fa {
-        margin-right: 5px;
-        width: 12px;
-    }
-
-    .el-tag {
-        padding: 0 12px;
-    }
-
-    .fa-play {
-        color: green;
-    }
-
-    .fa-pause {
-        color: red;
-    }
-
-    .el-dialog__wrapper .el-dialog .el-dialog__body {
-        padding: 20px 0 !important;
-        margin: 30px 20px !important;
-        border-radius: 10px;
-    }
-
-    .el-table .cell {
-        padding: 0 !important;
-    }
-
-    .demo-table-expand {
-        font-size: 0;
-    }
-
-    .demo-table-expand label {
-        width: 90px;
-        color: #99a9bf;
-    }
-
-    .demo-table-expand .el-form-item {
-        margin-right: 0;
-        margin-bottom: 0;
-        width: 50%;
-    }
-
-    .el-form-item-full {
-        width: 100% !important;
-    }
-</style>
-
 <template>
     <box title="任务列表" icon="fa fa-list">
         <el-table :data="tasks" border stripe class="list-table" :height="600">
@@ -102,7 +49,6 @@
                         </el-form-item>
                     </el-form>
                 </template>
-            </el-table-column>
             </el-table-column>
             <el-table-column label="任务名称">
                 <template scope="scope">
@@ -179,7 +125,7 @@
 </template>
 
 <script>
-    import Logs from '../partial/Logs.vue';
+    import Logs from './Logs.vue';
     import Group from '../content/RunResultGroup.vue'
 
     export default {
@@ -373,3 +319,56 @@
         }
     }
 </script>
+
+<style type="text/scss" lang="scss" scoped>
+    .list-table {
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .fa {
+        margin-right: 5px;
+        width: 12px;
+    }
+
+    .el-tag {
+        padding: 0 12px;
+    }
+
+    .fa-play {
+        color: green;
+    }
+
+    .fa-pause {
+        color: red;
+    }
+
+    .el-dialog__wrapper .el-dialog .el-dialog__body {
+        padding: 20px 0 !important;
+        margin: 30px 20px !important;
+        border-radius: 10px;
+    }
+
+    .el-table .cell {
+        padding: 0 !important;
+    }
+
+    .demo-table-expand {
+        font-size: 0;
+    }
+
+    .demo-table-expand label {
+        width: 90px;
+        color: #99a9bf;
+    }
+
+    .demo-table-expand .el-form-item {
+        margin-right: 0;
+        margin-bottom: 0;
+        width: 50%;
+    }
+
+    .el-form-item-full {
+        width: 100% !important;
+    }
+</style>

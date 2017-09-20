@@ -10,6 +10,7 @@ return [
     | This value is the name of your application. This value is used when the
     | framework needs to place the application's name in a notification or
     | any other location as required by the application or its packages.
+    |
     */
 
     'name' => env('APP_NAME', 'Laravel'),
@@ -34,7 +35,7 @@ return [
     |
     | When your application is in debug mode, detailed error messages with
     | stack traces will be shown on every error that occurs within your
-    | application. If disabled, a simple generic error task is shown.
+    | application. If disabled, a simple generic error page is shown.
     |
     */
 
@@ -64,7 +65,7 @@ return [
     |
     */
 
-    'timezone' => 'PRC',
+    'timezone' => 'UTC',
 
     /*
     |--------------------------------------------------------------------------
@@ -77,7 +78,7 @@ return [
     |
     */
 
-    'locale' => 'zh-CN',
+    'locale' => 'en',
 
     /*
     |--------------------------------------------------------------------------
@@ -120,7 +121,7 @@ return [
     |
     */
 
-    'log' => env('APP_LOG', 'daily'),
+    'log' => env('APP_LOG', 'single'),
 
     'log_level' => env('APP_LOG_LEVEL', 'debug'),
 
@@ -166,7 +167,6 @@ return [
         /*
          * Package Service Providers...
          */
-        Laravel\Tinker\TinkerServiceProvider::class,
 
         /*
          * Application Service Providers...
@@ -177,7 +177,6 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
 
-		Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
     ],
 
     /*

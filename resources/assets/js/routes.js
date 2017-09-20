@@ -31,6 +31,6 @@ export default [
     },
     {
         path: '*',
-        redirect: 'task'
+        redirect: '/'
     }
 ]
